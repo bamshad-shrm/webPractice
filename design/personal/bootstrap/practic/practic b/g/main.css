@@ -1,0 +1,56 @@
+body {
+	background-image: url("landscapeBg.png"); /* The image used */
+	/*background-color: green;*/
+	height: 100%; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the*/ 
+}
+
+#left {
+	min-height: 100%;
+}
+
+#right { 	
+	margin-top: auto;
+	margin-bottom: auto;
+	/*border: solid 1px black;*/
+}
+
+#myImg {
+	width: 301px; 
+	height: 719px;
+}
+
+.icon {
+	width: 100px; 
+	height: 100px;
+}
+
+@media only screen and (max-width: 480px) {
+
+	#myImg {
+		width: 188px; 
+		height: 449px;
+	}
+
+	.icon {
+		width: 75px; 
+		height: 75px;
+	}
+
+}
+
+@media (max-aspect-ratio: 65/100) {
+
+	#left {
+		background-image: url("narrowBg.png"); /* The image used */
+		/*background-color: green;*/
+		height: 100%; /* You must set a specified height */
+		background-position: center; /* Center the image */
+		background-repeat: no-repeat; /* Do not repeat the image */
+		background-size: cover; /* Resize the background image to cover the*/ 
+	}
+
+}
+

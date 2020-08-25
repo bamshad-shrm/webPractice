@@ -1,0 +1,6 @@
+{
+
+"products": [ ["Samsung s9", "12000 SEK"], ["Samsung s7", "8000 SEK"] ]
+
+}
+

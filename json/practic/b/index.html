@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		 <meta charset="UTF-8"> 
+	</head>
+	<body>
+
+		<p id="customers.0.firstName"></p>
+
+		<p id="customers.0.lastName"></p>
+
+		<p id="customers.1.firstName"></p>
+
+		<p id="customers.1.lastName"></p>
+
+
+		<script>
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					var myObj = JSON.parse(this.responseText);
+					var NumberOfCustomers = Object.keys(myObj.customers).length;
+					//for (var i=0; i<=NumberOfCustomers; i++) {
+						document.getElementById("customers.0.firstName").innerHTML = myObj.customers[0].firstName;
+						document.getElementById("customers.0.lastName").innerHTML = myObj.customers[0].lastName;
+						document.getElementById("customers.1.firstName").innerHTML = myObj.customers[1].firstName;
+						document.getElementById("customers.1.lastName").innerHTML = myObj.customers[1].lastName;
+
+					//}
+					//var customersArr = [];
+					//customersArr["firstName"] = "John";
+					//customersArr["lastName"] = "Doe";
+					//document.getElementById("firstName").innerHTML = customersArr.firstName;
+					//document.getElementById("lastName").innerHTML = customersArr.lastName;
+				}
+			};
+			xmlhttp.open("GET", "users.txt", true);
+			xmlhttp.send();
+		</script>
+
+	</body>
+</html>
+

@@ -1,0 +1,96 @@
+body {
+	background-image: url("../myImgs/bg/portraitBg.png"); 
+	background-size: cover;	
+}
+
+.container {
+	margin-top: 30px;
+}
+
+.navImg {
+	width: 100px;
+	height: 100px;
+}
+
+#topBtn {
+	display: none;
+	position: fixed;
+	bottom: 10%;
+	right: 10%;
+	z-index: 99;
+	font-size: 18px;
+	background-color: black;
+	text-decoration: none;
+	color: #EDF5E1;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+#topBtn:hover {
+	background-color: #585A56;
+	outline: none;
+}
+
+.contact {
+	position: fixed;
+	margin-bottom:0; 
+	bottom:0; 
+	width:100%;
+}
+
+p {
+	color: black;
+}
+
+/* This line is for removing the border after clicing */
+.navbar-brand, .nav-link, #topBtn, a {
+	border: none;
+	outline: none;
+}
+
+/* This section is for projects page index file */
+
+.prjImg {
+	height: 200px;
+	width: 200px;	
+}
+
+/* This section is for projects page index file */
+
+@media only screen and (max-width: 600px) {
+
+	#prjMenu {
+		flex-direction: column !important;
+	}
+
+	.prjImg {
+		height: 70px;
+		width: 70px;	
+	}
+
+}
+
+@media only screen and (max-width: 576px) {
+
+	.navbar {
+		height: 100px;
+		z-index: 1;			
+	}
+
+	.nav-item {
+		background-color: #343A40;
+	}
+
+	.navImg {
+		width: 70px;
+		height: 70px;
+	}
+
+	.navbar-nav {
+		float: right;
+
+	}
+
+}
+
+

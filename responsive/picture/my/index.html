@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+ 
+	<!--<div id="winSize"></div>
+	<div id="screenWidth"></div>
+	<div id="screenHeight"></div>-->
+
+	<img id="picture" src="me.png" alt="me" style="position:absolute;" >
+
+	<script>
+
+		var WindowsSize = function() {
+			var windowH=$(window).height(), windowW=$(window).width();			
+        	//$("#winSize").html("<p>Width: "+windowW+"<br>Height: "+windowH+"</p>");
+
+			var screenH=screen.height, screenW=screen.width;
+        	//document.getElementById("screenWidth").innerHTML = screenW;
+			//document.getElementById("screenHeight").innerHTML = screenH;
+
+			document.getElementById("picture").style.height = 713*windowW/screenW + "px";
+			document.getElementById("picture").style.width = 317*windowW/screenW + "px";
+			document.getElementById("picture").style.top = 40*windowW/screenW + "px";
+			document.getElementById("picture").style.left = 40*windowW/screenW + "px";
+
+		};
+
+		$(document).ready(WindowsSize); 
+		$(window).resize(WindowsSize); 
+
+	</script>
+
+</body>
+
+</html>

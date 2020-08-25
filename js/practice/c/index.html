@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<!-- Set a title for the App -->
+		<title>AngularJs & BTS4</title>
+
+		<!-- Set the codding UTF-8 -->
+		<meta charset="UTF-8">
+
+		<!-- Add angularJs -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<!-- AngularJS Route module -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+		<!-- Add bts4 and jquery -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="cdn/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="cdn/jquery/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
+		<!-- Latest compiled JavaScript -->
+		<script src="cdn/js/bootstrap.min.js"></script>
+
+		<!-- Add our js files -->
+		<script src="js/bamshadApp.js"></script>
+		<script src="js/bamshadController.js"></script>
+
+		<!-- Add our CSS files -->	
+		<link rel="stylesheet" type="text/css" href="css/main.css"> 
+
+	</head>
+
+	<body ng-app="bamshadApp" ng-controller="bamshadController">
+
+		<a href="#/!">First Page</a>
+		<a href="#!education">Education</a>
+		<a href="#!skills">Skills</a>
+		<div ng-view></div>
+
+	</body>
+
+</html>

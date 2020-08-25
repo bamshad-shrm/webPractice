@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		 <meta charset="UTF-8"> 
+
+		<style>
+			table {
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+				width: 100%;
+			}
+
+			td, th {
+				border: 1px solid black;
+				text-align: left;
+				padding: 8px;
+				width:50%;
+			}
+
+			tr:nth-child(even) {
+				background-color: #dddddd;
+			}
+		</style>
+
+	<head>
+
+	<body>
+
+		<table>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+			</tr>
+		</table>
+
+		<script>
+
+			function generate_table(tableArr) {
+
+				NumberOftableArrRows = tableArr.length;
+				NumberOftableArrColumns = tableArr[0].length;
+
+				// get the reference for the body
+				var body = document.getElementsByTagName("body")[0];
+			 
+				// creates a <table> element and a <tbody> element
+				var tbl = document.createElement("table");
+				var tblBody = document.createElement("tbody");
+			 
+				// creating all cells
+				for (var i = 0; i < NumberOftableArrRows; i++) {
+					// creates a table row
+					var row = document.createElement("tr");
+			 
+					for (var j = 0; j < NumberOftableArrColumns; j++) {
+						// Create a <td> element and a text node, make the text
+						// node the contents of the <td>, and put the <td> at
+						// the end of the table row
+						var cell = document.createElement("td");
+						var cellText = document.createTextNode(tableArr[i][j]);
+						cell.appendChild(cellText);
+						row.appendChild(cell);
+					}
+			 
+					// add the row to the end of the table body
+					tblBody.appendChild(row);
+				}
+			 
+				// put the <tbody> in the <table>
+				tbl.appendChild(tblBody);
+				// appends <table> into <body>
+				body.appendChild(tbl);
+				// sets the border attribute of tbl to 2;
+				tbl.setAttribute("border", "2");
+			}
+
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					db = JSON.parse(this.responseText);
+					var NumberOfCustomers = Object.keys(db.customers).length;
+					generate_table(db.customers);
+					//generate_table(db.admins);
+				}
+			};
+			xmlhttp.open("GET", "users.txt", true);
+			xmlhttp.send();
+
+		</script>
+
+	</body>
+
+</html>
+

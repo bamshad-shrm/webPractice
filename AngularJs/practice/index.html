@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Practice</title>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+
+	<body ng-app="myApp" ng-controller="firstControler">
+
+		<p>First name: <input type="text" ng-model="firstName"></p>
+		<p>Last name: <input type="text" ng-model="lastName"></p>
+		<p>Hello {{ firstName + " " + lastName }}</p>
+
+	</body>
+
+</html>

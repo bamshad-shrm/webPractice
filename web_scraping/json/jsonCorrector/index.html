@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<h4>Store id: </h4><p id="a"></p>
+		<h4>Original currency: </h4><p id="b"></p>
+		<h4>Product name: </h4><p id="c"></p>
+		<h4>Stock status: </h4><p id="d"></p>
+		<h4>Price inclShipping: </h4><p id="e"></p>
+		<h4>Price exclShipping: </h4><p id="f"></p>
+
+
+		<script>
+			var data = [{"store":{"id":28924,"name":"Zalando","featured":false,"hasLogo":false,"pathName":"/store/zalando--s28924","providedByStore":{"generalInformation":null},"userReviewSummary":{"rating":null,"count":0,"countTotal":0},"market":"primary","countryCode":"de","primaryMarket":"gb"},"brandRecommendedRetailer":false,"alternativePrices":[{"__typename":"AlternativePrice","id":"3239162363","name":"Reebok Classic REVENGE PLUS TENNIS STYLE SHOES - Trainers black/white/","type":"normal","externalUri":null,"stock":{"status":null,"statusText":""},"price":{"exclShipping":35,"inclShipping":null,"originalCurrency":"GBP","originalCurrencyExclShipping":"35"}},{"__typename":"AlternativePrice","id":"3183089101","name":"Reebok Classic REVENGE PLUS - Trainers white/clover green Women","type":null,"externalUri":null,"stock":{"status":null,"statusText":""},"price":{"exclShipping":38.49,"inclShipping":null,"originalCurrency":"GBP","originalCurrencyExclShipping":null}},{"__typename":"AlternativePrice","id":"3239162362","name":"Reebok Classic REVENGE PLUS - Trainers white/cold grey Women","type":null,"externalUri":null,"stock":{"status":null,"statusText":""},"price":{"exclShipping":62.99,"inclShipping":null,"originalCurrency":"GBP","originalCurrencyExclShipping":null}}]},{"__typename":"Price","id":"3223903113","name":"Reebok Women's Club C Revenge Sneaker, White/Chalk/None, 2 UK","type":"normal","externalUri":"https://pricespy.co.uk/redirect.php?prisid=3223903113&api_client=1331","stock":{"status":"in_stock","statusText":"In stock."},"deliveryOptions":[],"price":{"inclShipping":58.14,"exclShipping":58.14,"originalCurrency":"GBP","originalCurrencyExclShipping":"58.14"}}];
+
+			document.getElementById("a").innerHTML = data[0].store.id;
+			document.getElementById("b").innerHTML = data[0].alternativePrices[0].price.originalCurrency;
+			document.getElementById("c").innerHTML = data[1].name;
+			document.getElementById("d").innerHTML = data[1].stock.status;
+			document.getElementById("e").innerHTML = data[1].price.inclShipping;
+			document.getElementById("f").innerHTML = data[1].price.exclShipping;
+
+		</script>
+
+	</body>
+</html>

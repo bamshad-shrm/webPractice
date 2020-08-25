@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+	</head>
+
+	<body>
+
+		<div class="w3-container" ng-app="myApp" ng-controller="myCtrl"> 
+
+			<h3>Loop through the list of customers:</h3>
+			<table class="w3-table-all w3-hoverable">
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+				</tr>
+				<tr ng-repeat="x in myData">
+					<td>
+						{{ x.firstName }}
+					</td>
+					<td>
+						{{ x.lastName }}
+					</td>
+
+				</tr>
+			</table>
+
+			<h3>Select customer number:</h3>
+			<table class="w3-table-all w3-hoverable">
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+				</tr>
+				<tr>
+					<td>
+						{{ firstName }}
+					</td>
+					<td>
+						{{ lastName }}
+					</td>
+
+				</tr>
+			</table>
+
+		</div>
+
+		<script>
+			var app = angular.module('myApp', []);
+			app.controller('myCtrl', function($scope, $http) {
+				$http.get("users.php")
+				.then(function(response) {
+					//If you want to show the information of selected customer i.e customer with id=1
+					$scope.firstName = response.data.customers[1].firstName;
+					$scope.lastName = response.data.customers[1].lastName;
+
+					//IF you want to show all the custmers
+					$scope.myData = response.data.customers;
+				});
+			});
+		</script>
+
+	</body>
+
+</html>
+

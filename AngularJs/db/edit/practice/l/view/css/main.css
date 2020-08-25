@@ -1,0 +1,30 @@
+.mytable {
+	border-collapse: collapse;
+	width: 100%;
+	background-color: white;
+	table-layout: fixed;
+}
+
+.mytable-cell {
+ 	border: 1px solid black;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.mytable-cell td, th {
+	border: 1px solid black;
+	word-wrap: break-word;
+	text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+
+	.text {
+		font-size: 80%;
+	}
+
+}
+
+
+
+

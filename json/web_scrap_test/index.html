@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<p id="demo"></p>
+
+		<script>
+			var myJSON = '{"store": {"id":28924,"name":"Zalando"},"brandRecommendedRetailer":false,"alternativePrices":[{"__typename":"AlternativePrice"},{"__typename":"AlternativePrice"},{"__typename":"AlternativePrice"}]}';
+			var myObj = JSON.parse(myJSON);
+			document.getElementById("demo").innerHTML = myObj.brandRecommendedRetailer;
+		</script>
+
+	</body>
+</html>
+
+
+

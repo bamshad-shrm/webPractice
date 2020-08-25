@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<style>
+			p {
+				color: blue;
+			}
+		</style>
+
+	<head>
+
+	<body>
+
+		<div id="div1">
+		</div>
+
+
+		<script>
+
+			for (i=0; i<=3; i++) {
+				var para = document.createElement("p");
+				var node = document.createTextNode(i);
+				para.appendChild(node);
+				var element = document.getElementById("div1");
+				element.appendChild(para);
+			}
+
+		</script>
+
+	</body>
+
+</html>
+

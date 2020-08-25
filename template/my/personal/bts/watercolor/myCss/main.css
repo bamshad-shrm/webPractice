@@ -1,0 +1,663 @@
+/* --- Normal: bootstarp two collomns automatically response to screen size --- */
+
+body {
+	background-image: url("../myImgs/bg/landscapeBg.png"); 
+	background-size: cover;  
+}
+
+#left {
+	min-height: 100%;
+	/*border: 1px solid black;*/
+}
+
+#right { 	
+	margin-top: auto;
+	margin-bottom: auto;
+	min-height: 600px;
+}
+
+#myImg {
+	position: relative;
+	width: 301px; 
+	height: 719px;
+	display: block;
+	/*border: 1px solid blue;*/	
+	margin-top: auto;
+	margin-bottom: auto;
+	z-index: 1;
+}
+
+.boxes_bg {
+	position: relative;
+	background-image: url("../myImgs/bg/boxesBg.png"); 
+	background-repeat: no-repeat;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 120px;
+	height: 750px;
+	/*border: 1px solid red;*/
+	left: -21px;
+}
+
+.boxes_frame {
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 120px;
+	/*border: 1px solid green;*/
+	/*background-color: white;*/
+	z-index: 0;
+}
+
+.box {
+	height: 120px;
+	width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	/*border: solid 1px yellow;*/
+	text-align: center;
+}
+
+.boxes_img {
+	height: 100px;
+	width: 100px;	
+}
+
+.boxes_text {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	color: black;
+	font-size:80%;
+}
+
+/* --- To remove borders after click --- */
+a:active, a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+
+#landscapeMyImg, #leftAdj, #rightAdj, #topAdj, #bottomAdj  {
+	display: none;
+}
+
+/* --- Special landscape conditions --- */
+
+/* --- Low height tablets. Example: Samsung Galaxy Tab 3 V (1024px * 600px) --- */
+
+@media only screen and (orientation:landscape) and (max-height: 600px) {
+
+	#myImg {
+		width: 208px; 
+		height: 499px;
+		display: block;
+	}
+
+	.boxes_bg {
+		position: relative;
+		background-image: url("../myImgs/bg/boxesBg.png");
+		background-size: 100px 550px; 
+		background-repeat: no-repeat;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 100px;
+		height: 550px;
+		/*border: 1px solid red;*/
+		left: -15px;
+	}
+
+	.boxes_frame {
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 100px;
+		/*height: 499px;*/
+		/*border: solid 1px black;*/
+	}
+
+	.box {
+		height: 90px;
+		width: 90px;
+		margin-left: auto;
+		margin-right: auto;
+		/*border: solid 1px yellow;*/
+		text-align: center;	
+	}
+
+	.boxes_img {
+		height: 80px;
+		width: 80px;	
+	}
+
+	.boxes_text {
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 80%;
+		width: 80px;
+		color: black;
+	}
+
+}
+
+/* --- Long and narrow mobile phones. Example: Samsung Galaxy S8 Active (360px * 640px) --- */
+
+@media only screen and (orientation:landscape) and (min-aspect-ratio: 100/65) and (min-width: 650px) and (max-width: 812px) and (max-height: 480px) {
+
+	#left {
+		background-image: url("../myImgs/bg/landscapeBg.png");
+		background-position: center; 
+		background-repeat: no-repeat; 
+		background-size: cover;  
+	}
+
+	#landscapeMyImg {
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 158px; 
+		height: 237px;
+		display: block;
+	}
+
+	.boxes_bg {
+		position: relative;
+		background-image: url("../myImgs/bg/boxesBg.png");
+		background-size: 200px 300px; 
+		background-repeat: no-repeat;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 200px;
+		height: 300px;
+		/*border: 1px solid red;*/
+		
+	}
+
+	.boxes_frame {
+		min-width: 170px;
+		max-height: 250px;
+		margin: auto;
+		/*border: solid 1px black*/		
+	}
+
+	.box {
+		height: 80px;
+		width: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		/*border: solid 1px yellow;*/
+		text-align: center;	
+		display: inline;
+		float: left;	
+
+	}
+
+	.boxes_img {
+		height: 60px;
+		width: 60px;	
+	}
+
+	.boxes_text {
+		margin-left: auto;
+		margin-right: auto;
+		width: 80px;
+		font-size: 80%;
+		color: black;
+	}
+
+	#leftAdj {
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 150px; 
+		height: 250px;
+		display: block;
+		/*border: 1px solid black;*/
+	} 
+
+	#rightAdj  {
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 125px; 
+		height: 250px;
+		display: block;
+		/*border: 1px solid black;*/
+	}
+
+	#myImg {
+		display: none;
+	}
+
+}
+
+/* --- Small mobile phones. Example: Sony Xperia X Compact (360px * 540px) --- */
+
+@media only screen and (orientation:landscape) and (max-height: 480px) and (max-width: 649px) {
+
+	#landscapeMyImg {
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 158px; 
+		height: 237px;
+		display: block;
+	}
+
+	.boxes_bg {
+		position: relative;
+		background-image: url("../myImgs/bg/boxesBg.png");
+		background-size: 300px 200px; 
+		background-repeat: no-repeat;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 300px;
+		height: 200px;
+		/*border: 1px solid red;*/
+		
+	}
+
+	.boxes_frame {
+		margin: auto;
+		min-width: 250px;
+		max-height: 170px;
+		/*border: solid 1px black*/		
+	}
+
+	.box {
+		height: 80px;
+		width: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		/*border: solid 1px yellow;*/
+		text-align: center;	
+		display: inline;
+		float: left;	
+
+	}
+
+	.boxes_img {
+		height: 60px;
+		width: 60px;	
+	}
+
+	.boxes_text {
+		margin-left: auto;
+		margin-right: auto;
+		width: 80px;
+		font-size: 80%;
+		color: black;
+	}
+
+	#myImg {
+		display: none;
+	}
+
+}
+
+/* --- Very small mobile phones. Example: Motorola RAZR V3M (176px * 220px)  --- */
+
+@media only screen and (orientation:landscape) and (max-height: 240px) and (max-width: 320px) {
+
+	#landscapeMyImg {
+		width: 105px; 
+		height: 158px;
+		display: block;
+	}
+
+	.boxes_bg {
+		position: relative;
+		background-image: url("../myImgs/bg/boxesBg.png");
+		background-size: 0px 0px; 
+		background-repeat: no-repeat;
+		margin-top: auto;
+		margin-bottom: auto;
+		min-width: 90px;
+		max-height: 130px;
+		/*border: 1px solid blue;*/
+		
+	}
+	.boxes_frame {
+		margin-top: auto;
+		margin-bottom: auto;
+		min-width: 90px;
+		max-height: 130px;
+		/*border: solid 1px black*/		
+	}
+
+	.box {
+		height: 40px;
+		width: 40px;
+		margin-left: auto;
+		margin-right: auto;
+		/*border: solid 1px yellow;*/
+		text-align: center;	
+	}
+
+	.boxes_img {
+		height: 30px;
+		width: 30px;	
+	}
+
+	.boxes_text {
+		margin-left: auto;
+		margin-right: auto;
+		width: 40px;
+		font-size: 60%;
+		color: black;
+	}
+
+	#myImg {
+		display: none;
+	}
+
+}
+
+/* --- Special portrait conditions --- */
+
+/* --- Very wide tablets. Example: Microsoft surface pro (1024px * 1440px)  --- */
+
+@media only screen and (orientation:portrait) and (min-height: 1280px) and (min-width: 992px) {
+
+	body {
+		background-image: url("../myImgs/bg/portraitBg.png"); 
+		background-size: cover;  
+	}
+
+	#topAdj {
+		width: 600px;
+		height: 300px;
+		position: absolute;
+		top: 7%;
+		left:50%;
+		display: block;
+	}
+
+	#bottomAdj {
+		width: 600px;
+		height: 300px;
+		position: absolute;
+		bottom: 7%;
+		left:50%;
+		display: block;
+	}
+
+}
+
+/* --- Big tablets. Example: Samsung Galaxy Tab E 8.0 (800px * 1280px) --- */
+
+@media only screen and (orientation:portrait) and (min-height: 1280px) and (min-width: 600px)  and (max-width: 991px) {
+
+	#left {
+		background-image: url("../myImgs/bg/portraitBg.png");
+		height: 100%; 
+		background-position: center; 
+		background-repeat: no-repeat; 
+		background-size: cover;  
+	}
+
+	#topAdj {
+		width: 600px;
+		height: 300px;
+		position: absolute;
+		top: 5%;
+		left: 15%;
+		display: block;
+	}
+
+	#bottomAdj {
+		width: 600px;
+		height: 300px;
+		position: absolute;
+		bottom: 5%;
+		left:15%;
+		display: block;
+	}
+
+}
+
+/* --- Low height tablets. Example: Samsung Galaxy Tab 3 V (1024px * 600px) --- */
+
+@media only screen and (orientation:portrait) and (max-height: 600px) {
+
+	#myImg {
+		width: 208px; 
+		height: 499px;
+		display: block;
+	}
+
+	.boxes_bg {
+		position: relative;
+		background-image: url("../myImgs/bg/boxesBg.png");
+		background-size: 100px 500px; 
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 100px;
+		height: 500px;
+		/*border: 1px solid red;*/
+		left: -14px;
+	}
+
+	.boxes_frame {
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 100px;
+		height: 499px;
+		/*border: solid 1px black;*/
+	}
+
+	.box {
+		height: 100px;
+		width: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		/*border: solid 1px yellow;*/
+		text-align: center;	
+	}
+
+	.boxes_img {
+		height: 80px;
+		width: 80px;	
+	}
+
+	.boxes_text {
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 80%;
+		width: 80px;
+		color: black;
+	}
+
+}
+
+/* --- Long and narrow mobile phones. Example: Samsung Galaxy S8 Active (360px * 640px) --- */
+
+@media only screen and (orientation:portrait) and (max-aspect-ratio: 65/100) and (min-height: 650px) and (max-height: 812px) and (max-width: 540px) {
+
+	#myImg {
+		width: 188px; 
+		height: 449px;
+	}
+
+	.boxes_bg {
+		position: relative;
+		background-image: url("../myImgs/bg/boxesBg.png"); 
+		background-size: 80px 480px;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 80px;
+		height: 480px;
+		/*border: 1px solid red;*/
+		left: -12px;
+	}
+
+	.boxes_frame {
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 80px;
+		height: 449px;
+		/*border: solid 1px black;*/		
+	}
+
+	.box {
+		height: 80px;
+		width: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		/*border: solid 1px yellow;*/
+		text-align: center;	
+	}
+
+	.boxes_img {
+		margin-left: auto;
+		margin-right: auto;
+		height: 60px;
+		width: 60px;	
+	}
+
+	.boxes_text {
+		margin-left: auto;
+		margin-right: auto;
+		width: 80px;
+		font-size: 80%;
+		color: black;
+	}
+
+	#left {
+		background-image: url("../myImgs/bg/portraitBg.png"); 
+		height: 100%; 
+		background-position: center; 
+		background-repeat: no-repeat; 
+		background-size: cover;  
+	}
+
+	#topAdj {
+		width: 300px;
+		height: 150px;
+		position: absolute;
+		top: 0;
+		display: block;
+	}
+
+	#bottomAdj {
+		width: 300px;
+		height: 150px;
+		position: absolute;
+		bottom: 0;
+		display: block;
+	}
+
+}
+
+/* --- Small mobile phones. Example: Sony Xperia X Compact (360px * 540px) --- */
+
+@media only screen and (orientation:portrait) and (max-width: 420px) and (max-height: 649px) {
+
+	#myImg {
+		width: 188px; 
+		height: 449px;
+	}
+
+	.boxes_bg {
+		position: relative;
+		background-image: url("../myImgs/bg/boxesBg.png"); 
+		background-size: 80px 480px;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 80px;
+		height: 480px;
+		/*border: 1px solid red;*/
+		left: -12px;
+	}
+
+	.boxes_frame {
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 80px;
+		height: 449px;
+		/*border: solid 1px black;*/		
+	}
+
+	.box {
+		height: 80px;
+		width: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		/*border: solid 1px yellow;*/
+		text-align: center;	
+	}
+
+	.boxes_img {
+		margin-left: auto;
+		margin-right: auto;
+		height: 60px;
+		width: 60px;	
+	}
+
+	.boxes_text {
+		margin-left: auto;
+		margin-right: auto;
+		width: 80px;
+		font-size: 80%;
+		color: black;
+	}
+
+}
+
+/* --- Very small mobile phones. Example: Motorola RAZR V3M (176px * 220px) --- */
+
+@media only screen and (max-width: 240px) and (max-height: 320px) {
+
+	body {
+		background-image: url("../myImgs/bg/portraitBg.png"); 
+		background-size: cover;  
+	}
+
+	#myImg {
+		width: 94px; 
+		height: 225px;
+	}
+
+	.boxes_bg {
+		position: relative;
+		background-image: url("../myImgs/bg/boxesBg.png"); 
+		background-size: 0px 0px;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 40px;
+		height: 250px;
+		/*border: 1px solid red;*/
+		left: -6px;
+	}
+
+
+	.boxes_frame {
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 40px;
+		/*border: solid 1px black;*/		
+	}
+
+	.box {
+		height: 40px;
+		width: 40px;
+		margin-left: auto;
+		margin-right: auto;
+		/*border: solid 1px yellow;*/
+		text-align: center;	
+	}
+
+	.boxes_img {
+		height: 30px;
+		width: 30px;	
+	}
+
+	.boxes_text {
+		margin-left: auto;
+		margin-right: auto;
+		width: 40px;
+		font-size: 80%;
+		color: black;
+	}
+
+	p, h3 {
+		font-size: 60%;
+	}
+
+}
+
+

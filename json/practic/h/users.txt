@@ -1,0 +1,6 @@
+{
+
+"customers": [ ["John", "Doe"], ["Anna", "Smith"] ]
+
+}
+

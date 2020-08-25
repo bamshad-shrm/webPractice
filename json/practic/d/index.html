@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<style>
+			p {
+				color: blue;
+			}
+		</style>
+
+	<head>
+
+	<body>
+
+		<div id="div1">
+		</div>
+
+
+		<script>
+
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					var myObj = JSON.parse(this.responseText);
+					var NumberOfCustomers = Object.keys(myObj.customers).length;
+
+					for (i=0; i<=NumberOfCustomers; i++) {
+						var para = document.createElement("p");
+						var node = document.createTextNode(myObj.customers[i].firstName);
+						para.appendChild(node);
+						var element = document.getElementById("div1");
+						element.appendChild(para);
+					}
+
+				}
+			};
+			xmlhttp.open("GET", "users.txt", true);
+			xmlhttp.send();
+
+		</script>
+
+	</body>
+
+</html>
+

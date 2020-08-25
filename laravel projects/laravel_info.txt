@@ -1,0 +1,23 @@
+# tutorials:
+
+https://tutorials.kode-blog.com/laravel-install-and-configure
+
+#Tutorial for layout structure:
+
+https://www.1and1.com/cloud-community/learn/application/php/laravel-tutorial-introduction-to-blade-templates/
+
+#tutorial for css:
+
+https://laravel.com/docs/5.5/frontend
+
+https://laravel.com/docs/5.5/mix#working-with-stylesheets
+
+https://www.cloudways.com/blog/routing-in-laravel/
+
+# after instalation go to the directory of your projects and use the following command:
+
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+#IMPORTANT IMPORTANT IMPORTANT NOTE!!!:
+
+#After uploading a laravel project to the web server (for example mihan mizban), change the permissionn of the "ZIP" file and NOT the extracted folder!!!

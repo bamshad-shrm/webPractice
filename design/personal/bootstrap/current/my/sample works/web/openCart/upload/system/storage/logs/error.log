@@ -1,0 +1,30 @@
+2018-09-21 6:41:07 - PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'bamshads_OpenCartUser'@'localhost' (using password: YES) in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 7
+2018-09-21 6:41:07 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 10
+2018-09-21 6:41:07 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 10
+2018-09-21 6:41:07 - PHP Notice:  Undefined variable: mysql in /home/bamshads/public_html/my/sample works/web/openCart/upload/install/controller/install/step_3.php on line 280
+2018-09-21 6:41:07 - PHP Notice:  Trying to get property of non-object in /home/bamshads/public_html/my/sample works/web/openCart/upload/install/controller/install/step_3.php on line 280
+2018-09-21 6:41:37 - PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'bamshads_OpenCartUser'@'localhost' (using password: YES) in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 7
+2018-09-21 6:41:37 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 10
+2018-09-21 6:41:37 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 10
+2018-09-21 6:41:37 - PHP Notice:  Undefined variable: mysql in /home/bamshads/public_html/my/sample works/web/openCart/upload/install/controller/install/step_3.php on line 280
+2018-09-21 6:41:37 - PHP Notice:  Trying to get property of non-object in /home/bamshads/public_html/my/sample works/web/openCart/upload/install/controller/install/step_3.php on line 280
+2018-09-21 6:51:09 - PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'bamshads_OpenCartUser'@'localhost' (using password: YES) in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 7
+2018-09-21 6:51:09 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 10
+2018-09-21 6:51:09 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 10
+2018-09-21 6:51:09 - PHP Notice:  Undefined variable: mysql in /home/bamshads/public_html/my/sample works/web/openCart/upload/install/controller/install/step_3.php on line 280
+2018-09-21 6:51:09 - PHP Notice:  Trying to get property of non-object in /home/bamshads/public_html/my/sample works/web/openCart/upload/install/controller/install/step_3.php on line 280
+2018-09-21 6:53:38 - PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'bamshads_OpenCartUser'@'localhost' (using password: YES) in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 7
+2018-09-21 6:53:38 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 10
+2018-09-21 6:53:38 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 10
+2018-09-21 6:53:38 - PHP Notice:  Undefined variable: mysql in /home/bamshads/public_html/my/sample works/web/openCart/upload/install/controller/install/step_3.php on line 280
+2018-09-21 6:53:38 - PHP Notice:  Trying to get property of non-object in /home/bamshads/public_html/my/sample works/web/openCart/upload/install/controller/install/step_3.php on line 280
+2018-09-21 6:55:56 - PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'bamshads_OpenCartUser'@'localhost' (using password: YES) in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 7
+2018-09-21 6:55:56 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 10
+2018-09-21 6:55:56 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 10
+2018-09-21 6:55:56 - PHP Notice:  Undefined variable: mysql in /home/bamshads/public_html/my/sample works/web/openCart/upload/install/controller/install/step_3.php on line 280
+2018-09-21 6:55:56 - PHP Notice:  Trying to get property of non-object in /home/bamshads/public_html/my/sample works/web/openCart/upload/install/controller/install/step_3.php on line 280
+2018-09-21 7:09:13 - PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'bamshads_OpenCartUser'@'localhost' (using password: YES) in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 7
+2018-09-21 7:09:13 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 10
+2018-09-21 7:09:13 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/bamshads/public_html/my/sample works/web/openCart/upload/system/library/db/mysqli.php on line 10
+2018-09-21 7:09:13 - PHP Notice:  Undefined variable: mysql in /home/bamshads/public_html/my/sample works/web/openCart/upload/install/controller/install/step_3.php on line 280
+2018-09-21 7:09:13 - PHP Notice:  Trying to get property of non-object in /home/bamshads/public_html/my/sample works/web/openCart/upload/install/controller/install/step_3.php on line 280

@@ -1,0 +1,28 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Imager.js</title>
+        <link rel="stylesheet" href="Assets/Styles/base.css">
+    </head>
+    <body>
+
+
+        <div>
+          <div class="delayed-image-load" data-src="me_sq.png"></div>
+        </div>
+
+
+        <script src="../../Imager.js"></script>
+        <script>
+            var imager = new Imager();
+
+            var trigger = document.querySelector('.trigger-button');
+            trigger.addEventListener('click', function () {
+                imager.add('.triggered-image-load');
+                document.querySelector('.trigger-section').removeChild(trigger);
+            });
+        </script>
+    </body>
+</html>

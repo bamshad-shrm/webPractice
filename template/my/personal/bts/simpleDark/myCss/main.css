@@ -1,0 +1,36 @@
+#text {
+	overflow: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	max-height: 80%;
+}
+
+#myImg {
+	display: block;
+}
+
+#landscapeMyImg {
+	display: none;
+}
+
+.nav-item {
+	width: 100px;
+}
+
+@media only screen and (max-height: 480px) {
+
+	/*#text {
+		padding-top: 30px;
+		padding-left: 80px;	
+		margin-bottom: 50px;	
+	}*/
+
+	#myImg {
+		display: none;
+	}
+
+	#landscapeMyImg {
+		display: block;
+	}
+
+}

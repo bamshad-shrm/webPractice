@@ -1,0 +1,11 @@
+.content {
+	background-color: blue;
+}
+
+@media (max-aspect-ratio: 6/10) {
+
+  .content {
+    background-color: yellow;
+  }
+
+}

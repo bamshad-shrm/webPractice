@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<style>
+			table {
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+				width: 100%;
+			}
+
+			td, th {
+				border: 1px solid #dddddd;
+				text-align: left;
+				padding: 8px;
+			}
+
+			tr:nth-child(even) {
+				background-color: #dddddd;
+			}
+		</style>
+
+	<head>
+
+	<body>
+
+		<script>
+
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					var obj = JSON.parse(this.responseText);
+					
+
+					var NumberOfCustomers = Object.keys(obj.customers).length;
+					
+						document.write("<table>");
+							document.write("<tr>");
+								document.write("<th>First Name</th>");
+								document.write("<th>Last Name</th>");
+							document.write("</tr>");
+							for (i = 0; i < NumberOfCustomers; i++) { 
+								document.write("<tr>");
+									document.write("<td>" + obj.customers[i].firstName + "</td>");
+									document.write("<td>" + obj.customers[i].lastName + "</td>");
+								document.write("</tr>");
+							}
+						document.write("</table>");
+				}
+			}; 
+			xmlhttp.open("GET", "users.txt", true);
+			xmlhttp.send();
+
+		</script>
+
+	</body>
+
+</html>
+

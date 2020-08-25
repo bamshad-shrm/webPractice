@@ -1,0 +1,51 @@
+.myBtn {
+	border: 1px solid black;
+}
+
+.myForm {
+	position: absolute;
+	top: 25%;
+	left: 15%;
+	border: 1px solid black;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.mytable {
+	position: relative;
+	top: 25px;
+	border-collapse: collapse;
+	width: 100%;
+	background-color: white;
+	table-layout: fixed;
+}
+
+.mytable-cell {
+ 	/*border: 1px solid black;*/
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.mytable-cell td {
+	/*border: 1px solid black;*/
+	word-wrap: break-word;
+	text-align: center;
+}
+
+.mytable-cell th {
+	text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+
+	.text {
+		font-size: 80%;
+	}
+
+}
+
+
+
+

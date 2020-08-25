@@ -1,0 +1,23 @@
+#myImg {
+	width: 301px; 
+	height: 719px;
+}
+
+.icon {
+	width: 100px; 
+	height: 100px;
+}
+
+ @media only screen and (max-width: 480px) {
+
+	#myImg {
+		width: 205px; 
+		height: 490px;
+	}
+
+	.icon {
+		width: 75px; 
+		height: 75px;
+	}
+
+}

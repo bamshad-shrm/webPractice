@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<style>
+			table, th, td {
+				border: 1px black solid;
+				border-collapse: collapse;
+			}
+			td {
+				color: blue;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<table id="demo">
+		</table>	
+
+		<script>
+
+			// build HTML table data from an array (one or two dimensional)
+			function generateTable(data) {
+				var html = '';
+
+				if (typeof (data[0]) === 'undefined') {
+					return null;
+				}
+
+				if (data[0].constructor === String) {
+					html += '<tr>\r\n';
+						html += '<th>First Name</th>\r\n';
+						html += '<th>Last Name</th>\r\n';
+					html += '</tr>\r\n';
+					html += '<tr>\r\n';
+					for (var item in data) {
+						html += '<td>' + data[item] + '</td>\r\n';
+					}
+					html += '</tr>\r\n';
+				}
+
+				if (data[0].constructor === Array) {
+					html += '<tr>\r\n';
+						html += '<th>First Name</th>\r\n';
+						html += '<th>Last Name</th>\r\n';
+					html += '</tr>\r\n';
+					for (var row in data) {
+						html += '<tr>\r\n';
+						for (var item in data[row]) {
+						    html += '<td>' + data[row][item] + '</td>\r\n';
+						}
+						html += '</tr>\r\n';
+					}
+				}
+
+				if (data[0].constructor === Object) {
+					html += '<tr>\r\n';
+						html += '<th>First Name</th>\r\n';
+						html += '<th>Last Name</th>\r\n';
+					html += '</tr>\r\n';
+					for (var row in data) {
+						html += '<tr>\r\n';
+						for (var item in data[row]) {
+						    html += '<td>' + item + ':' + data[row][item] + '</td>\r\n';
+						}
+						html += '</tr>\r\n';
+					}
+				}
+
+				return html;
+			}
+
+			
+			var users = [["Kamran", "Irani"], ["Mehran", "Kashani"]];	
+
+			document.getElementById("demo").innerHTML = generateTable(users);
+
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,150 @@
+.me {
+	width: 206px;
+	height: 206px;
+    position: absolute;
+    top:14px;
+    left: 0;
+    right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text {
+	text-align: center;
+	font-size: 80%;
+	width: 50%;
+	height: 40%;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-y: scroll;
+}
+
+.boxes_frame {
+	width: 60%;
+	height: 10%;
+	position: absolute;
+	top: 73%;
+    left: 0;
+    right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.box {
+	position: relative;
+	margin: 3%;
+	height: 60%;
+	width: 14%;
+	float: left;
+}
+
+.boxes_img {
+	position: absolute;
+	left: 5%;
+	height:90%;
+	width: 90%;	
+	}
+
+.boxes_text {
+	position: absolute;
+	top: 70%;
+	left: 0;
+	text-align: center;	
+	font-size: 90%;
+	color: black;	
+	width: 100%;
+}
+
+.contact_frame {
+	position: absolute;
+	top: 85%;
+	left: 30%;
+	width: 40%;
+	height: 100px;
+}
+
+.contact_text {
+	position: absolute;
+	top: 22%;
+	left: 10%;
+	width: 80%;
+	height: 28%;
+	text-align: center;	
+	font-size:100%;
+	color: white;
+}
+
+@media only screen and (max-width: 720px) and (orientation:portrait) {
+
+	.boxes_frame {
+		width: 80%;
+		height: 100px;
+		position: absolute;
+		top: 70%;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.boxes_text {
+		position: absolute;
+		top: 70%;
+		left: 0;
+		text-align: center;	
+		font-size: 70%;
+		color: black;	
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 480px) and (orientation:portrait) {
+
+	.text {
+		display: none;
+	}
+
+	.boxes_frame {
+		top: 240px;
+		left: 0;
+		width: 90%;
+		height: 200px;
+		float: center;	
+	}
+
+	.box {
+		position: relative;
+		margin: 4%;
+		height: 40%;
+		width: 16%;
+	}
+
+	.boxes_text {
+		font-size: 70%;
+	}
+
+	.contact_frame {
+		position: absolute;
+		top: 470px;
+		left: 5%;
+		width: 90%;
+		height: 100px;
+	}
+
+	.contact_text {
+		position: absolute;
+		top: 22%;
+		left: 10%;
+		width: 80%;
+		height: 28%;
+		text-align: center;	
+		font-size:100%;
+		color: white;
+	}
+
+}

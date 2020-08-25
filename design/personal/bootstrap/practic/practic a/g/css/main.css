@@ -1,0 +1,26 @@
+#myImg, #myTxt {
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+	min-height: 100vh; /* These two lines are counted as one :-)       */
+	display: flex;
+	align-items: center;
+	/*border: solid 1px black;*/	
+}
+
+#myImg {
+	padding-left: 100px;
+}
+
+#myTxt {
+	padding-right: 100px;
+}
+
+#myContact {
+    position: fixed;
+    height: 100px;
+	width: 200px;
+	right: 0;
+    bottom: 0;
+	/*border: solid yellow 2px;*/
+}
+
+

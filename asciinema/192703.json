@@ -1,0 +1,42 @@
+{
+  "stdout": [
+    [
+      0.06,
+      "\u001b]0;bamshad@bamshad-pc: ~\u0007\u001b[01;32mbamshad@bamshad-pc\u001b[00m:\u001b[01;34m~\u001b[00m$ "
+    ],
+    [
+      12.537416,
+      "c"
+    ],
+    [
+      0.215674,
+      "d"
+    ],
+    [
+      1.824201,
+      " "
+    ],
+    [
+      0.824061,
+      "."
+    ],
+    [
+      0.135823,
+      "."
+    ],
+    [
+      0.265431,
+      "\r\n\u001b]0;bamshad@bamshad-pc: /home\u0007\u001b[01;32mbamshad@bamshad-pc\u001b[00m:\u001b[01;34m/home\u001b[00m$ "
+    ]
+  ],
+  "title": null,
+  "width": 80,
+  "height": 24,
+  "version": 1,
+  "command": null,
+  "duration": 15.863304,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  }
+}

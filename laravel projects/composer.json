@@ -1,0 +1,6 @@
+{
+    "require": {
+        "kaishiyoku/laravel-menu": "^2.0",
+        "nunomaduro/laravel-console-menu": "^2.0"
+    }
+}

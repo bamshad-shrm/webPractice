@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<style>
+			p {
+				color: blue;
+			}
+		</style>
+
+	<head>
+
+	<body>
+
+		<table>
+			<tr id="div1">
+			</tr>
+		</table>
+
+
+		<script>
+
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					var myObj = JSON.parse(this.responseText);
+					var NumberOfCustomers = Object.keys(myObj.customers).length;
+
+					for (i=0; i<=NumberOfCustomers; i++) {
+						var tableTd = document.createElement("td");
+						var tableTdTxt = document.createTextNode(myObj.customers[i].firstName);
+						tableTd.appendChild(tableTdTxt);
+						var tableTr = document.getElementById("div1");
+						tableTr.appendChild(tableTd);
+					}
+
+				}
+			};
+			xmlhttp.open("GET", "users.txt", true);
+			xmlhttp.send();
+
+		</script>
+
+	</body>
+
+</html>
+
